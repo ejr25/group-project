@@ -12,6 +12,7 @@
   height: 100%;
   background: #2b3d5c;
   transition: all 0.5s ease;
+  z-index 400;
 }
 
 .sidebar h1 {
