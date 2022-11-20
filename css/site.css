@@ -118,7 +118,8 @@ body,
 
 .popup button {
   display: block;
-  margin: 0 0 20px auto;
+  margin: 20px auto;
+  align: center;
   background-color: transparent;
   font-size: 30px;
   color: #dd74f4;
