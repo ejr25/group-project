@@ -51,11 +51,13 @@ ul li:hover a {
   display: none;
 }
 
-label #btn,label #cancel {
+label #btn,
+label #cancel {
   position: absolute;
   cursor: pointer;
   background: #1357a6;
   border-radius: 3px;
+  z-index: 1022;
 }
 
 label #btn {
@@ -65,6 +67,7 @@ label #btn {
   color: white;
   padding: 6px 12px;
   transition: all 0.5s;
+  z-index: 1022;
 }
 
 label #cancel {
@@ -77,38 +80,63 @@ label #cancel {
   transition: all 0.5s ease;
 }
 
-#check:checked ~ .sidebar {
+#check:checked~.sidebar {
   left: 0;
 }
 
-#check:checked ~ label #btn {
+#check:checked~label #btn {
   left: 250px;
   opacity: 0;
   pointer-events: none;
 }
 
-#check:checked ~ label #cancel {
+#check:checked~label #cancel {
   left: 195px;
 }
 
-#check:checked ~ section {
+#check:checked~section {
   margin-left: 250px;
 }
 
-
-section {
-  background: ;
-  background-position:;
-  background-size:;
-  height: 100vh;
-  transition: all 0.5s;
+html,
+body,
+#map {
+  height: 100%;
 }
 
-#map {
-    height: 80%;
-    width: 80%;
-    align: right;
-    vetical-align: middle;
-    margin: 0;
-    padding: 0;
+.popup {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  position: absolute;
+  height: 100%;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+  text-align: center;
+  z-index: 1023;
+}
+
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #dd74f4;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1023;
+}
+
+.popup p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+  z-index: 1023;
+}
+
+.popup span {
+  font-weight: bold;
+  color: #dd74f4;
 }
