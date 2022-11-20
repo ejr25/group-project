@@ -1,3 +1,5 @@
+alert("DISCLAIMER");
+
 var southWest = L.latLng(36.94, -122.11),
     northEast = L.latLng(37.04, -121.96),
     bounds = L.latLngBounds(southWest, northEast);
