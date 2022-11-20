@@ -1,5 +1,23 @@
-alert("DISCLAIMER");
+/*
+ * Author: Ganzorig Gantushig <ggantush@ucsc.edu>
+ * Created: 11 November
+ * License: Public Domain
+ */
 
+//popup
+window.addEventListener("load", function () {
+    setTimeout(
+        function open(event) {
+            document.querySelector(".popup").style.display = "block";
+        },
+        500
+    )
+});
+document.querySelector("#close").addEventListener("click", function () {
+    document.querySelector(".popup").style.display = "none";
+});
+
+//map bounds
 var southWest = L.latLng(36.94, -122.11),
     northEast = L.latLng(37.04, -121.96),
     bounds = L.latLngBounds(southWest, northEast);
