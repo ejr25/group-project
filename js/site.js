@@ -99,8 +99,16 @@ var zenZones = L.layerGroup([zenZoneTest]);
 var stuSpotIcon = L.icon({
     iconUrl: "img/slug.png"
 })
-var stuSpotTest = L.marker([36.98, -122.06], {icon: stuSpotIcon}).bindPopup('This is a test for a Student-Named Spot.');
-var stuSpots = L.layerGroup([stuSpotTest]);
+var ss0 = L.marker([37.00032503935382, -122.04825623161635], {icon: stuSpotIcon}).bindPopup('Koi Pond.'),
+    ss1 = L.marker([37.00121337261763, -122.04950633103583], {icon: stuSpotIcon}).bindPopup('Rock Garden.'),
+    ss2 = L.marker([36.99483434090599, -122.0678131282766], {icon: stuSpotIcon}).bindPopup('Porter Meadows.'),
+    ss3 = L.marker([37.00489117336368, -122.06002121569239], {icon: stuSpotIcon}).bindPopup('Tree Nine.'),
+    ss4 = L.marker([37.00480866077326, -122.05698968608996], {icon: stuSpotIcon}).bindPopup('Merrill Meadow.'),
+    ss5 = L.marker([36.988265578422265, -122.06568671861666], {icon: stuSpotIcon}).bindPopup('Oakes Meadow.'),
+    ss6 = L.marker([37.02527947008107, -122.05748618155012], {icon: stuSpotIcon}).bindPopup('Garden of Eden'),
+    ss7 = L.marker([36.9952687894609, -122.04433433436452], {icon: stuSpotIcon}).bindPopup('Pogonip');
+var stuSpots = L.layerGroup([ss0,ss1,ss2,ss3,ss4,ss5,ss6,ss7]); 
+
 
 var overlayMaps = {
     "Emergency Callboxes": blueLights,
