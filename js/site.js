@@ -1,6 +1,6 @@
 /*
- * Author: Ganzorig Gantushig <ggantush@ucsc.edu>
- * Created: 11 November
+ * Author: Jacquelyn Meek, Ganzorig Gantushig, Eric Ramirez, Hannah Hodor, Alex Jones, and Emma Radichkova
+ * Created: 4 December
  * License: Public Domain
  */
 
