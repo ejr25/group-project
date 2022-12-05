@@ -48,6 +48,13 @@ ul li:hover a {
   margin-right: 16px;
 }
 
+.sidebar img {
+margin-right: 10px;
+margin-top: 7px;
+padding: 0px;
+float: left;
+}
+
 #check {
   display: none;
 }
